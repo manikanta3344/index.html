@@ -1,29 +1,48 @@
-
-<!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
-  <meta charset="utf-8">
-  <style>
-    .myDiv {
-      border: 5px outset red;
-      background-image:url(./peter-th.jpg);
-      background-size: cover;
-      text-align: center;
-     height: 500px ;
-     width: 500;
+    <title>My Website</title>
+    <meta charset="utf-8">
 
-    }
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+        }
+
+        .myDiv {
+            background-image: url('./peter-th.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #playLink {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-decoration: none;
+            background: rgba(0,0,0,0.5);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
     </style>
 </head>
-<body>
-  <div class="myDiv">
-<a href="./My Video2.mp4"><h1> WELCOME TO MY NEW WORLD</h1></a>
-</div>
-  <p>This is a simple example of a home page.</p>
 
-  <img src="image.jpg" alt="My Image">
+<body background-image="./peter-th.jpg">
 
-  <a href="https://sites.google.com/site/satyamanikantakunapareddi">Visit Example</a>
+    <div class="myDiv">
+        <a
+          id="playLink"
+          href="https://sites.google.com/site/satyamanikantakunapareddi"
+        >
+            WELCOME TO MY NEW WORLD
+        </a>
+    </div>
+
 </body>
 </html>
